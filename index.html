@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Token Checker</title>
+	</header>
+	<body>
+		<div class="main">
+			<input class="output form-control" type="text" placeholder="Wprowadź Token" />
+			<button class="btn btn-primary" onclick="checkToken()">Sprawdź</button>
+		</div>
+		<br />
+		<br />
+		<div class="image">
+			<img id="profile" />
+		</div>
+		<ul class="list-group">
+			<li class="list-group-item" id="tag">Tag</li>
+			<li class="list-group-item" id="email">Email</li>
+			<li class="list-group-item" id="verified">Zweryfikowany</li>
+			<li class="list-group-item" id="id">ID</li>
+			<li class="list-group-item" id="locale">Locale</li>
+			<li class="list-group-item" id="phone">Telefon</li>
+		</ul>
+		<div class="centered-error-div">
+			<div class="alert alert-danger text-center" id="alert-doe">Nie prawidłowy Token</div>
+		</div>
+	</body>
+	<script src="scripts/main.js"></script>
+</html>
